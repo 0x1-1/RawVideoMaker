@@ -19,7 +19,7 @@ RawVideoMaker is a Windows desktop app that converts *any* file's raw bytes into
 1. Click **Select File** to choose your file.
 2. Click **Generate** to create the glitch video.
 3. The output video will be saved next to the input file with `_glitch.mp4` suffix.
-
+https://github.com/user-attachments/assets/7505dcd3-b403-4506-a29c-12e571672b14
 ## Contributions
 
 Pull requests and issues are very welcome!  
