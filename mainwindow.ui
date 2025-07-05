@@ -92,6 +92,216 @@
       </layout>
      </widget>
     </item>
+    <item>
+     <widget class="QGroupBox" name="groupBoxAdvanced">
+      <property name="title">
+       <string>Advanced Options</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayoutAdvanced">
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelResolution">
+         <property name="text">
+          <string>Resolution:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="comboResolution">
+         <item><property name="text"><string>640x480</string></property></item>
+         <item><property name="text"><string>1280x720</string></property></item>
+         <item><property name="text"><string>1920x1080</string></property></item>
+         <item><property name="text"><string>Custom...</string></property></item>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="lineEditCustomResolution">
+         <property name="placeholderText">
+          <string>e.g. 800x600</string>
+         </property>
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelFramerate">
+         <property name="text">
+          <string>Frame Rate:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="spinFramerate">
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>240</number>
+         </property>
+         <property name="value">
+          <number>30</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="labelPixelFormat">
+         <property name="text">
+          <string>Pixel Format:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QComboBox" name="comboPixelFormat">
+         <item><property name="text"><string>yuv420p</string></property></item>
+         <item><property name="text"><string>yuv422p</string></property></item>
+         <item><property name="text"><string>rgb24</string></property></item>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="labelCodec">
+         <property name="text">
+          <string>Codec:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QComboBox" name="comboCodec">
+         <item><property name="text"><string>libx264</string></property></item>
+         <item><property name="text"><string>libx265</string></property></item>
+         <item><property name="text"><string>mpeg4</string></property></item>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="labelBrightness">
+         <property name="text">
+          <string>Brightness:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QDoubleSpinBox" name="spinBrightness">
+         <property name="minimum">
+          <double>-1.0</double>
+         </property>
+         <property name="maximum">
+          <double>1.0</double>
+         </property>
+         <property name="singleStep">
+          <double>0.1</double>
+         </property>
+         <property name="value">
+          <double>0.0</double>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="labelContrast">
+         <property name="text">
+          <string>Contrast:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QDoubleSpinBox" name="spinContrast">
+         <property name="minimum">
+          <double>0.5</double>
+         </property>
+         <property name="maximum">
+          <double>2.0</double>
+         </property>
+         <property name="singleStep">
+          <double>0.1</double>
+         </property>
+         <property name="value">
+          <double>1.0</double>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="labelTheme">
+         <property name="text">
+          <string>Theme:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QComboBox" name="comboTheme">
+         <item><property name="text"><string>Light</string></property></item>
+         <item><property name="text"><string>Dark</string></property></item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBoxBatch">
+      <property name="title">
+       <string>Batch Processing</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayoutBatch">
+       <item>
+        <widget class="QListWidget" name="listWidgetBatchFiles"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayoutBatchButtons">
+         <item>
+          <widget class="QPushButton" name="btnAddFiles">
+           <property name="text">
+            <string>Add Files</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnRemoveFiles">
+           <property name="text">
+            <string>Remove Selected</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutOutput">
+      <item>
+       <widget class="QLabel" name="labelOutputFile">
+        <property name="text">
+         <string>Output File:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditOutputFile"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSelectOutputFile">
+        <property name="text">
+         <string>Select Output</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutPreviewCancel">
+      <item>
+       <widget class="QPushButton" name="btnPreview">
+        <property name="text">
+         <string>Preview</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCancel">
+        <property name="text">
+         <string>Cancel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
    </layout>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
